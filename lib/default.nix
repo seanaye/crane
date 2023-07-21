@@ -54,6 +54,7 @@ let
 
       buildDepsOnly = callPackage ./buildDepsOnly.nix { };
       buildPackage = callPackage ./buildPackage.nix { };
+      buildTauriPackage = callPackage ./buildTauriPackage.nix { };
       buildTrunkPackage = callPackage ./buildTrunkPackage.nix { };
       cargoAudit = callPackage ./cargoAudit.nix { };
       cargoBuild = callPackage ./cargoBuild.nix { };

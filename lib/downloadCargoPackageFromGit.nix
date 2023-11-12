@@ -30,6 +30,8 @@ let
       };
 
   deps = {
+    # Use content addressing if the nix feature `ca-derivations` is enabled
+    __contentAddressed = true;
     nativeBuildInputs = [
       cargo
       craneUtils

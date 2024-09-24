@@ -74,7 +74,7 @@ let
     '')
     (attrNames sources);
 in
-runCommandLocal "vendor-cargo-deps" { } ''
+runCommandLocal "vendor-cargo-deps" { __contentAddressed = true; } ''
   mkdir -p $out
   cat >>$out/config.toml <<EOF
   ${vendoredRegistries.config}
